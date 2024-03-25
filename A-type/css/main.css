@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #hd {
   background-color: skyblue;
   padding: 0 15px;
@@ -64,6 +65,10 @@
   margin: 0 15px;
   cursor: pointer;
 }
+.tab .notice ul {
+  flex-direction: column;
+}
+
 .tab .on h2 {
     color: #0c51a6
 }
@@ -72,7 +77,25 @@
     display: flex;
     /* block으로 하면 갤러리 이미지가 아래로 가기때문에 flex로 */
 }
+.gallery img {
+  padding: 0 10px;
+}
 
-.tab .notice ul {
-  flex-direction: column;
+#fd {
+  background-color: gray;
+}
+#fd li {
+  margin: 0 15px;
+  list-style: 2;
+}
+
+#popup {
+  display: none;
+  border: 1px solid #333;
+  background-color: white;
+  text-align: center;
+  padding: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
