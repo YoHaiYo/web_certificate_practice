@@ -81,6 +81,11 @@
   padding: 0 10px;
 }
 
+.banner img, .link img {
+  width: 400px;
+  height: 200px;
+}
+
 #fd {
   background-color: gray;
 }

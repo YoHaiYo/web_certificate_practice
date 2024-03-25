@@ -1,0 +1,121 @@
+@charset "UTF-8";
+#hd {
+  background-color: skyblue;
+  padding: 0 15px;
+}
+#hd h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+#hd h1 a{
+  color: white;
+}
+
+/* 대메뉴 */
+#gnb>li>a{
+  font-size: 20px;
+  padding: 10px 25px;
+  background-color: darkblue;
+  color: white;
+  display: block;   
+  /* d-block 줘야 높이 스타일 먹힘 */
+}
+/* 소메뉴 */
+#gnb ul {
+  background-color: white;
+  line-height: 2.5;
+  left: 0;
+  right: 0;
+  top: 100%;
+  text-indent: 15px;
+
+  /* 소메뉴 애니메이션 */
+  height: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+
+/* ★바뀌는 부분 */
+#gnb::before{ 
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background-color: white;
+  height: 0;
+  transition: .5s;
+}
+#gnb:hover::before{
+  height: 150px;
+}
+#gnb:hover ul{
+  height: 150px ;
+}
+
+/* 대메뉴 호버시 활성화 */
+#gnb li:hover>a {
+  color: darkblue;
+  background-color: white;
+  font-weight: bold;
+}
+
+/* 공지와 갤러리 */
+.tab h2 {
+  line-height: 40px;
+}
+.tab ul {
+  left: 0;
+  right: 0;
+  top: 40px;
+  background-color: white;
+
+  /* js로 컨트롤 */
+  display: none;
+  padding: 15px;
+  box-sizing: border-box;
+  line-height: 2;
+}
+.tab h2 {
+  margin: 0 15px;
+  cursor: pointer;
+}
+.tab .notice ul {
+  flex-direction: column;
+}
+
+.tab .on h2 {
+    color: #0c51a6
+}
+
+.tab .on ul {
+    display: flex;
+    /* block으로 하면 갤러리 이미지가 아래로 가기때문에 flex로 */
+}
+.gallery img {
+  padding: 0 10px;
+}
+
+.banner img, .link img {
+  width: 400px;
+  height: 200px;
+}
+
+#fd {
+  background-color: gray;
+}
+#fd li {
+  margin: 0 15px;
+  list-style: 2;
+}
+
+#popup {
+  display: none;
+  border: 1px solid #333;
+  background-color: white;
+  text-align: center;
+  padding: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
