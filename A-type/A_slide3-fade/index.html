@@ -77,11 +77,12 @@
             좌우슬라이드 / 상하슬라이드 / 페이드 3가지만 출제됨
             ( 이 예제에서는 좌우슬라이드로 제작함 )
             -->
-            <div class="swiper-wrapper d-flex wmany h300">
+            <!-- ★바뀌는부분 : d-flex제거. rel. abs로 슬라이드 겹치기. on으로 첫 슬라이드  -->
+            <div class="swiper-wrapper wmany h300 rel">
                 <!-- wmany : overflow가 적용되려면 swiper-wrapper의 너비가 엄청 커야함 -->
-                <div class="swiper-slide"><img src="./img/slider01.jpg" alt="slider01"></div>
-                <div class="swiper-slide"><img src="./img/slider02.jpg" alt="slider02"></div>
-                <div class="swiper-slide"><img src="./img/slider03.jpg" alt="slider03"></div>
+                <div class="swiper-slide abs on"><img src="./img/slider01.jpg" alt="slider01"></div>
+                <div class="swiper-slide abs"><img src="./img/slider02.jpg" alt="slider02"></div>
+                <div class="swiper-slide abs"><img src="./img/slider03.jpg" alt="slider03"></div>
             </div>
         </div>                
 
