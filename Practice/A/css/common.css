@@ -1,10 +1,11 @@
 @charset "UTF-8";
+
 /* reset */
 * {
-  margin: 0;
   padding: 0;
-  color: #333; 
-  font-family: sans-serif; 
+  margin: 0;
+  color: #333;
+  font-family: serif;
 }
 li {
   list-style: none;
@@ -12,6 +13,7 @@ li {
 a {
   text-decoration: none;
 }
+
 /* common */
 .rel {
   position: relative;
@@ -19,11 +21,11 @@ a {
 .abs {
   position: absolute;
 }
+.d-block {
+  display: block;
+}
 .d-flex {
   display: flex;
-}
-.flex-column {
-  flex-direction: column;
 }
 .jcc {
   justify-content: center;
@@ -34,18 +36,20 @@ a {
 .aic {
   align-items: center;
 }
+.aie {
+  align-items: end;
+}
 .ofh {
   overflow: hidden;
 }
-
 .w100 {
   width: 100%;
 }
 .w33 {
-  width: 33.333%;
+  width: 33.33333%;
 }
 .wmany {
-  width: 999999px;
+  width: 99999px;
 }
 .h100 {
   height: 100px;
@@ -56,8 +60,7 @@ a {
 .h300 {
   height: 300px;
 }
-
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
