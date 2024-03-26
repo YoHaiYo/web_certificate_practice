@@ -24,14 +24,38 @@
   background-color: skyblue;
 
 }
+#gnb::before {
+  content: "";
+  background-color: white;
+  /* overflow: hidden; */
+  height: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  transition: .5s;
+}
+
 /* 호버 애니메이션 */
 #gnb ul{
   overflow: hidden;
   height: 0;
   transition: .5s;
 }
-#gnb>li:hover ul {
+#gnb:hover ul {
   height: 120px;
+}
+#gnb:hover::before {
+  height: 120px;
+}
+
+.swiper-slide {
+  transition: 1s;
+  opacity: 0;
+}
+.swiper-slide.on {
+  z-index: 9;
+  opacity: 1;
 }
 
 .tab h2 {
@@ -52,4 +76,9 @@
 }
 .gallery ul li{
   margin: 0 10px;
+}
+
+#popup {
+  display: none;
+  z-index: 9;
 }
