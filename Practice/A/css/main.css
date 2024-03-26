@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+
+#gnb>li {
+  width: 100%;
+  background-color: darkblue;
+  text-align: center;
+  padding: 10px 15px;
+}
+#gnb>li:hover {
+  background-color: skyblue;
+}
+#gnb>li>a {
+  color: white;
+}
+#gnb>li>ul {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  left: 0;
+  top: 100%;
+}
+#gnb>li>ul>li:hover {
+  background-color: skyblue;
+
+}
+/* 호버 애니메이션 */
+#gnb ul{
+  overflow: hidden;
+  height: 0;
+  transition: .5s;
+}
+#gnb>li:hover ul {
+  height: 120px;
+}
+
+.tab h2 {
+  cursor: pointer;
+}
+.tab .on h2 {
+  color: darkblue;
+}
+.tab .notice ul {
+  flex-direction: column;
+}
+.tab ul {
+  display: none;  
+  left: 0;
+}
+.tab .on ul {
+  display: flex;
+}
+.gallery ul li{
+  margin: 0 10px;
+}
