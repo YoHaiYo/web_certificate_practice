@@ -1,6 +1,14 @@
 @charset "UTF-8";
 
+/* C형 스타일 */
+#hd {
+  width: 200px;
+}
+#threeBanner {
+  width: 800px;
+}
 
+/* 기존 */
 #gnb>li {
   width: 100%;
   background-color: darkblue;
@@ -24,19 +32,6 @@
   background-color: skyblue;
 
 }
-#gnb::before {
-  content: "";
-  background-color: white;
-  /* overflow: hidden; */
-  height: 0;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
-  transition: .5s;
-  z-index: 10;
-
-}
 
 /* 호버 애니메이션 */
 #gnb ul{
@@ -45,10 +40,7 @@
   transition: .5s;
   z-index: 10;
 }
-#gnb:hover ul {
-  height: 120px;
-}
-#gnb:hover::before {
+#gnb>li:hover ul {
   height: 120px;
 }
 
