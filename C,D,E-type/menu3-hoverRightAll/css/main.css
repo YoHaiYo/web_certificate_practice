@@ -24,19 +24,34 @@
 #gnb ul {
   background-color: white;
   line-height: 2.5;
-  left: 0;
-  right: 0;
-  top: 100%;
+  left: 100%;
+  /* right: 100%; */
+  top: 0%;
+  bottom: 0%;
   text-indent: 15px;
+  
 
   /* 소메뉴 애니메이션 */
-  max-height: 0;
+  /* ★바뀌는부분 */
+  /* max-height: 0; */
+  width: 0px;
+  justify-content: start;
+
   overflow: hidden;
   transition: .5s;
   z-index: 9;
 }
-#gnb li:hover ul {
-  max-height: 150px;
+
+/* ★추가한부분 */
+#gnb ul li {
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+/* ★바뀌는부분 */
+#gnb:hover ul {
+  /* max-height: 150px; */  
+  width: 800px;
 }
 
 /* 대메뉴 호버시 활성화 */
