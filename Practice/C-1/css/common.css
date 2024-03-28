@@ -22,6 +22,9 @@ a {
 .d-flex {
   display: flex;
 }
+.flex-column {
+  flex-direction: column;
+}
 .jcc {
   justify-content: center;
 }
@@ -35,10 +38,6 @@ a {
   align-items: end;
 }
 
-.ofh {
-  overflow: hidden;
-}
-
 .w100r {
   width: 100%;
 }
@@ -50,6 +49,9 @@ a {
 }
 .w300 {
   width: 300px;
+}
+.w600 {
+  width: 600px;
 }
 .w800 {
   width: 800px;
@@ -70,5 +72,11 @@ a {
 
 .container {
   max-width: 1000px;
-  background-color: orange;
+  /* background-color: orange; */
+}
+.ofh {
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
 }
