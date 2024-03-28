@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+}
+#swiper {
+  width: 1200px;
+  height: 300px;
+}
+.swiper-slide {
+  width: 1200px;
+  height: 300px;
+}
+
+/* fadeSlide */
+.swiper-slide {
+  opacity: 0;
+  transition: 1s;
+}
+.swiper-slide.on {
+  opacity: 1;
+  z-index: 1;
+}
