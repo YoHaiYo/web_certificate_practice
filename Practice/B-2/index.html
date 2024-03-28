@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹기능사</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- 
+        주의사항 : 
+        - 작업 완료 후 href="#none" 한꺼번에 넣기
+        - 이미지 alt 값 빼먹지 말기
+        - css에 @charset "UTF-8";
+     -->
+</head>
+
+<body>
+    <div class="container rel">
+        <header id="hd" class="h100 d-flex jcb aic rel">
+            <h1><a href=""><img src="./img/logo.png" alt=""></a></h1>
+            <!-- #gnb>li.rel*4>a{대메뉴$}+ul.abs>li*4>a{소메뉴$} -->
+            <div class="h100 d-flex aie">
+                <div id="gnb" class="d-flex aie">
+                    <li class="rel">
+                        <a href="">대메뉴1</a>
+                        <ul class="abs">
+                            <li><a href="">소메뉴1</a></li>
+                            <li><a href="">소메뉴2</a></li>
+                            <li><a href="">소메뉴3</a></li>
+                            <li><a href="">소메뉴4</a></li>
+                        </ul>
+                    </li>
+                    <li class="rel">
+                        <a href="">대메뉴2</a>
+                        <ul class="abs">
+                            <li><a href="">소메뉴1</a></li>
+                            <li><a href="">소메뉴2</a></li>
+                            <li><a href="">소메뉴3</a></li>
+                            <li><a href="">소메뉴4</a></li>
+                        </ul>
+                    </li>
+                    <li class="rel">
+                        <a href="">대메뉴3</a>
+                        <ul class="abs">
+                            <li><a href="">소메뉴1</a></li>
+                            <li><a href="">소메뉴2</a></li>
+                            <li><a href="">소메뉴3</a></li>
+                            <li><a href="">소메뉴4</a></li>
+                        </ul>
+                    </li>
+                    <li class="rel">
+                        <a href="">대메뉴4</a>
+                        <ul class="abs">
+                            <li><a href="">소메뉴1</a></li>
+                            <li><a href="">소메뉴2</a></li>
+                            <li><a href="">소메뉴3</a></li>
+                            <li><a href="">소메뉴4</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </header>
+        <div id="swiper" class="ofh h300">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide h300"><a href="#none"><img src="./img/slider01.jpg" alt="silde"></a></div>
+                <div class="swiper-slide h300"><a href="#none"><img src="./img/slider02.jpg" alt="silde"></a></div>
+                <div class="swiper-slide h300"><a href="#none"><img src="./img/slider03.jpg" alt="silde"></a></div>
+            </div>
+        </div>
+        <div id="threeBanner" class="h200 d-flex">
+            <!-- .tab.rel>.notice>h2{공지사항}+ul>li*4>a{공지내용$}  -->
+                <div class="notice w400">
+                    <h2>공지사항</h2>
+                    <ul class="">
+                        <li><a href="">공지내용1</a></li>
+                        <li><a href="">공지내용2</a></li>
+                        <li><a href="">공지내용3</a></li>
+                        <li><a href="">공지내용4</a></li>
+                    </ul>
+                </div>
+                <div class="gallery w400">
+                    <h2>갤러리</h2>
+                    <ul class="d-flex">
+                        <li><a href=""><img src="./img/gallery01.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./img/gallery02.jpg" alt=""></a></li>
+                        <li><a href=""><img src="./img/gallery03.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="link w400"><a href=""><img class="w400 h200" src="./img/link.jpg" alt=""></a></div>
+            
+        </div>
+        <footer id="ft" class="d-flex aic h100">
+            <!-- div{copyright}+.d-flex.flex-column>div{SNS}+div{FamilySite} -->
+            <div class="d-flex w800 jcc">copyright</div>
+            <div class="d-flex w400 flex-column aic jcc">
+                <div class="h50 d-flex aic">SNS</div>
+                <div class="h50 d-flex aic">FamilySite</div>
+            </div>
+        </footer>
+        <div id="popup" class="abs"></div>
+    </div>
+</body>
+
+</html>

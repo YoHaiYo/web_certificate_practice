@@ -1,0 +1,43 @@
+@charset "UTF-8";
+#gnb::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  right: 0%;
+  height: 0px;
+  background-color: darkblue;
+  transition: .5s;
+}
+#gnb>li>a {
+  font-weight: bold;
+  display: block;
+  padding: 10px 15px;
+}
+#gnb>li:hover {
+  background-color: darkblue;
+  color: white;
+}
+#gnb>li:hover>a{
+  color: white;
+}
+#gnb ul {
+  overflow: hidden;
+  height: 0;
+  transition: .5s;
+  background-color: darkblue;
+}
+#gnb ul li a{
+  display: block;
+  padding: 10px 15px;
+  color: white;
+}
+#gnb ul li:hover {
+  background-color: white;
+}
+#gnb ul li:hover a{
+  color: darkblue;
+}
+#gnb:hover ul, #gnb:hover::before {
+  height: 160px;
+}
