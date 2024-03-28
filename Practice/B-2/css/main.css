@@ -41,3 +41,14 @@
 #gnb:hover ul, #gnb:hover::before {
   height: 160px;
 }
+
+/* popup */
+#popup {
+  border: 1px solid #333;
+  padding: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  display: none;
+}

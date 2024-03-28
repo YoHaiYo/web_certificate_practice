@@ -1,5 +1,6 @@
 $("document").ready(function(){
 
+  // slide
   function horizontalSilde(){
     $(".swiper-wrapper").animate({"marginLeft": -1200}, 300, function(){
       $(".swiper-slide").eq(0).appendTo($(".swiper-wrapper"))
@@ -22,5 +23,13 @@ $("document").ready(function(){
     $(".swiper-slide").eq(sildeIndex).addClass("on").siblings().removeClass("on")
   }
 
-  // setInterval(verticalSilde, 3000)
+  setInterval(verticalSilde, 3000)
+
+  // popup
+  $(".notice li:first-child").click(function(){
+    $("#popup").show()    
+  })
+  $("#popup button").click(function(){
+    $("#popup").hide()    
+  })
 })
