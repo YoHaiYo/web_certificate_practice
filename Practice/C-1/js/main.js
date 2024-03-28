@@ -1,6 +1,5 @@
 $(document).ready(function(){
   // slide
-
   let slideIndex = 0;
   let slideNum = $(".swiper-slide").length  
   function fadeSlide(){
@@ -22,4 +21,17 @@ $(document).ready(function(){
     })
   }
   setInterval(fadeSlide, 3000)
+
+  // tab 
+  $("h2").click(function(){
+    $(this).parent().addClass("on").siblings().removeClass("on")
+  })
+
+  // popup 
+  $(".notice:first-child").click(function(){
+    $("#popup").show()
+  })
+  $("#popup button").click(function(){
+    $("#popup").hide()
+  })
 })

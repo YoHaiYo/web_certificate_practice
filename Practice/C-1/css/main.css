@@ -55,3 +55,38 @@
   z-index: 1;
   opacity: 1;
 }
+
+/* tab */
+.tab ul{
+  display: none;
+}
+.tab .on ul{
+  display: flex;
+}
+.tab .on h2 {
+  color: darkblue;
+}
+.notice ul {
+  flex-direction: column;
+}
+.gallery ul {
+  left: 0;
+}
+.gallery img {
+  width: 80px;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+/* popup */
+#popup {
+  display: none;
+  z-index: 9;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  border: 1px solid #333;
+}
