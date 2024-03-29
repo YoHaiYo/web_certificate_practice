@@ -47,6 +47,9 @@ a {
 .w33 {
   width: 33.333%;
 }
+.w1200 {
+  width: 1200px;
+}
 .wmany {
   width: 999999px;
 }

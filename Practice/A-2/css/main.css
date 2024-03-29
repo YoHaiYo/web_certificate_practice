@@ -3,6 +3,11 @@
   background-color: orange;
 }
 
+
+#gnb ul>li>a {
+  color: darkblue;
+}
+/* hover-wing */
 #gnb::before {
   content: "";
   position: absolute;
@@ -10,18 +15,47 @@
   left: 0;
   right: 0;
   height: 0;
-  background-color: darkblue;
+  background-color: skyblue;
   transition: .5s;
-}
-#gnb ul>li>a {
-  color: white;
+  z-index: 2;
 }
 #gnb ul {
   height: 0;
   overflow: hidden;
   transition: .5s;
+  z-index: 2;
 }
 #gnb:hover ul,
 #gnb:hover::before {
   height: 150px;
+}
+
+/* hover-one */
+/* #gnb ul {
+  height: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+#gnb li:hover ul {
+  height: 150px;
+} */
+
+/* hover-all */
+/* #gnb ul {
+  height: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+#gnb:hover ul {
+  height: 150px;
+} */
+
+/* fade-slide */
+.swiper-slide {
+  opacity: 0;
+  transition: 1s;
+}
+.swiper-slide.on {
+  opacity: 1;
+  z-index: 1;
 }
