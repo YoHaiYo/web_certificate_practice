@@ -1,0 +1,27 @@
+@charset "UTF-8";
+#hd {
+  background-color: orange;
+}
+
+#gnb::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 0;
+  background-color: darkblue;
+  transition: .5s;
+}
+#gnb ul>li>a {
+  color: white;
+}
+#gnb ul {
+  height: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+#gnb:hover ul,
+#gnb:hover::before {
+  height: 150px;
+}
